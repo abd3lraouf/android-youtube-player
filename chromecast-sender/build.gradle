@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply from: '../dependencies.gradle'
+apply plugin: 'maven-publish'
 
 android {
   compileSdkVersion versions.compileSdk
@@ -43,4 +44,3 @@ ext {
   PUBLISH_DESCRIPTION = 'Extension for the android-youtube-player:core library, that enables Chromecast compatibility.'
 }
 
-apply from: "../scripts/publish-module.gradle"
